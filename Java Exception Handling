@@ -1,0 +1,19 @@
+
+
+class Solution {
+    public int findMin(int a, int b) {
+        int min = Integer.MAX_VALUE;
+        try{
+            
+            min = Math.min(min, a+b);
+            min = Math.min(min, a-b);
+            min = Math.min(min, a*b);
+            min = Math.min(min, a/b);
+            
+        }catch(ArithmeticException e){
+            
+        }
+        return min;
+        
+    }
+}
